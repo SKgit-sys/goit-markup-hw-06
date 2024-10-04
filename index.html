@@ -24,16 +24,14 @@
     <!-- Header of the page -->
 
     <header class="title-header">
-      <div class="container-header container">
-        <div class="side-container">
+      <div class="container container-header">
         <nav class="title-navigation">
           <a class="title-name" href="./index.html"
             >Web<span class="title-name-part">Studio</span></a
           >
-          <button class="header-button" type="button"><svg class="group-svg" width="24" height="24"><use href="./images/icons.svg#icon-group"></use></svg></button>
           <ul class="title-name-list">
             <li>
-              <a class="title-name-link-first" href="./index.html"
+              <a class="title-name-link current" href="./index.html"
                 ><span class="title-link-studio">Studio</span></a
               >
             </li>
@@ -55,8 +53,23 @@
             </li>
           </ul>
         </address>
+        <button class="header-button" type="button">
+          <svg class="group-svg" width="24" height="24">
+            <use href="./images/icons.svg#icon-group"></use>
+          </svg>
+        </button>
       </div>
+
+
+      <div class="mobile-menu">
+        <div class="container mobile-menu-container">
+          <button class="mobile-menu-close"></button>
+          <nav class="mobile-menu-nav"></nav>
+          <address class="mobile-address"></address>
+        </div>
       </div>
+
+
     </header>
 
     <main>
@@ -484,8 +497,7 @@
 
     <!-- Last words -->
     <footer class="footer-page">
-      <div class="flex-container">
-        <div class="additional-container">
+      <div class="container flex-container">
         <div class="footer-name-container">
           <a class="footer-name" href="./index.html"
             >Web<span class="part-title-studio">Studio</span></a
@@ -541,25 +553,24 @@
           </ul>
         </div>
       </div>
-        <div class="footer-input">
-          <p class="text-subscribe">Subscribe</p>
-          <form class="form-input">
-            <label class="footer-label">
-              <input
-                class="footer-input-email"
-                type="email"
-                name="mail"
-                placeholder="E-mail"
-              />
-            </label>
-            <button class="footer-button" type="submit">
-              Subscribe
-              <svg class="last-icon" width="24" height="24">
-                <use href="./images/icons.svg#icon-send"></use>
-              </svg>
-            </button>
-          </form>
-        </div>
+      <div class="footer-input">
+        <p class="text-subscribe">Subscribe</p>
+        <form class="form-input">
+          <label class="footer-label">
+            <input
+              class="footer-input-email"
+              type="email"
+              name="mail"
+              placeholder="E-mail"
+            />
+          </label>
+          <button class="footer-button" type="submit">
+            Subscribe
+            <svg class="last-icon" width="24" height="24">
+              <use href="./images/icons.svg#icon-send"></use>
+            </svg>
+          </button>
+        </form>
       </div>
     </footer>
 
@@ -638,19 +649,100 @@
                 </svg>
               </span>
               I accept the terms and conditions of the &nbsp;
-              <a
-                class="privacy-link"
-                href=""
-                >Privacy Policy</a>
+              <a class="privacy-link" href="">Privacy Policy</a>
             </label>
           </div>
           <button class="modal-button" type="submit">Send</button>
         </form>
       </div>
     </div>
+
+
+
+
+            <!-- Modal Menu -->
+            <div class="modal-menu">
+              <div class="menu-container">
+                <div>
+                <button class="menu-button">
+                  <svg class="menu-svg" width="8" height="8">
+                    <use href="./images/icons.svg#icon-exit"></use>
+                  </svg>
+                </button>
+              </div>
+                <nav class="menu-nav">
+                <ul class="nav-list">
+                  <li class="nav-list-li">
+        <a class="menu-link" href="./index.html"><span class="menu-span">Studio</span></a>
+                  </li>
+                  <li>
+        <a class="menu-link" href="">Portfolio</a>
+                  </li>
+                  <li>
+        <a class="menu-link" href="">Contacts</a>
+                  </li>
+                </ul>
+              </nav>
+              <div class="svg-address-container">
+              <div class="address-container">
+                <ul class="address-list-contact">
+                  <li class="address-list">
+                    <a class="address-link" href="tel:+110001111111"><span class="address-span">+11 (000) 111-11-11</span></a>
+                  </li>
+                  <li class="address-list">
+                    <a class="address-link" href="mailto:info@devstudio.com">info@devstudio.com</a>
+                  </li>
+                </ul>
+              </div>
+              <div class="menu-svg-container">
+                <ul class="menu-social-links">
+                  <li class="links-social-list">
+                    <a
+                      class="second-links"
+                      href="https://www.instagram.com/"
+                      target="_blank"
+                      ><svg class="icons" width="24" height="24">
+                        <use href="./images/icons.svg#icon-instagram"></use>
+                      </svg>
+                    </a>
+                  </li>
+                  <li class="links-social-list">
+                    <a
+                      class="second-links"
+                      href="https://www.twitter.com"
+                      target="_blank"
+                      ><svg class="icons" width="24" height="24">
+                        <use href="./images/icons.svg#icon-twitter"></use>
+                      </svg>
+                    </a>
+                  </li>
+                  <li class="links-social-list">
+                    <a
+                      class="second-links"
+                      href="https://www.facebook.com"
+                      target="_blank"
+                      ><svg class="icons" width="24" height="24">
+                        <use href="./images/icons.svg#icon-facebook"></use>
+                      </svg>
+                    </a>
+                  </li>
+                  <li class="links-social-list">
+                    <a
+                      class="second-links"
+                      href="https://www.linkedin.com"
+                      target="_blank"
+                      ><svg class="icons" width="24" height="24">
+                        <use href="./images/icons.svg#icon-linkedin"></use>
+                      </svg>
+                    </a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+              </div>
+             </div>
   </body>
 </html>
-
 
 <!-- <svg class="privacy-svg" width="10" height="8"></svg> -->
 <!-- <use href="./images/icons.svg#icon-checkbox"></use> -->
