@@ -264,13 +264,75 @@ a {
       rgba(46, 47, 66, 0.7),
       rgba(46, 47, 66, 0.7)
     ),
-    url(.././images/peopleoffice1.jpg);
+    url(../images/peopleoffice-mobile.jpg);
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
   background-color: #2e2f42;
   padding-top: 72px;
   padding-bottom: 72px;
+  max-width: 320px;
+  max-height: 432px;
+  margin: 0 auto;
+}
+
+@media screen and (max-width: 767px) and (min-resolution: 192dpi) {
+  .section-title {
+background-image: linear-gradient(
+  to bottom,
+  rgba(46, 47, 66, 0.7),
+  rgba(46, 47, 66, 0.7)
+),
+ url(../images/retina/peopleoffice-mobile@2x.jpg);
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .section-title {
+    background-image: linear-gradient(
+      to bottom,
+      rgba(46, 47, 66, 0.7),
+      rgba(46, 47, 66, 0.7)
+    ),
+     url(../images/peopleoffice-tablet.jpg);
+max-width: 768px;
+min-height: 436px;
+  }
+}
+
+@media screen and (min-width: 768px) and (min-resolution: 192dpi) {
+  .section-title {
+    background-image: linear-gradient(
+      to bottom,
+      rgba(46, 47, 66, 0.7),
+      rgba(46, 47, 66, 0.7)
+    ),
+     url(../images/retina/peopleoffice-tablet@2x.jpg);
+  }
+}
+
+@media screen and (min-width: 1158px) {
+  .section-title {
+    background-image: linear-gradient(
+      to bottom,
+      rgba(46, 47, 66, 0.7),
+      rgba(46, 47, 66, 0.7)
+    ),
+     url(../images/peopleoffice1.jpg);
+    max-width: 1440px;
+    max-height: 600px;
+  }
+}
+
+@media screen and (min-width: 1158px) and (min-resolution: 192dpi) {
+  .section-title {
+    background-image: linear-gradient(
+      to bottom,
+      rgba(46, 47, 66, 0.7),
+      rgba(46, 47, 66, 0.7)
+    ),
+     url(../images/retina/peopleoffice1@2x.jpg);
+  }
 }
 
 .section-title-name {
@@ -418,7 +480,6 @@ a {
   }
 
   .main-title-page {
-    text-align: center;
     font-weight: 500;
     font-size: 20px;
     line-height: 1.2;
