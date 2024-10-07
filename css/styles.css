@@ -92,10 +92,10 @@ a {
   letter-spacing: 0.03em;
   text-transform: uppercase;
   color: #4d5ae5;
-  margin-right: 76px;
   padding: 24px 0;
   display: block;
 }
+/* margin-right: 76px; */
 
 .header-button {
   padding: 0;
@@ -398,8 +398,8 @@ min-height: 436px;
 /* Second Section */
 
 .section-title-container {
-  margin-top: 96px;
-  margin-bottom: 96px;
+  padding-top: 96px;
+  padding-bottom: 96px;
 }
 
 .first-container-svg-images {
@@ -823,7 +823,6 @@ min-height: 436px;
 .footer-social-links {
   display: flex;
   gap: 16px;
-  margin-bottom: 72px;
 }
 
 .links-social-list {
@@ -902,62 +901,71 @@ min-height: 436px;
 }
 
 @media screen and (min-width: 768px) {
-  .footer-page {
-    padding-top: 4px;
-    padding-bottom: 96px;
-  }
+
   .flex-container {
-    gap: 24px;
     flex-direction: row;
-    padding-left: 108px;
+    display: flex;
+    column-gap: 24px;
+    row-gap: 72px;
     justify-content: flex-start;
+    align-items: start;
+    padding-left: 108px;
+    flex-wrap: wrap;
+  }
+
+  .container {
+    padding-left: 108px;
+    padding-right: 108px;
   }
 
   .form-input{
-     flex-direction: row;
-  }
-
-  .footer-name {
-    text-align: start;
+    flex-direction: row;
+    gap: 24px;
   }
 
   .footer-name-container {
-    width: 264px;
-  }
-
-  .footer-links-container {
-    align-items: flex-start;
+  width: 264px;
+  display: block;
   }
 
   .footer-input {
-    display: block;
-    padding-left: 108px;
+display: block;
   }
 }
 
 @media screen and (min-width: 1158px) {
     .footer-page {
         padding: 100px 0;
-        display: flex;
-        max-width: auto;
-        height: 310px;
     }
 
+    .container {
+      padding: 0 15px;
+      }
+
     .flex-container {
-padding-left: 15px;
-padding-right: 0;
+    flex-wrap: nowrap;
+    align-items: baseline;
+    gap: 0;
+    margin: 0 auto;
     }
 
     .footer-name-container {
-        margin-right: 120px;
+      margin-right: 120px;
+      display: flex;
+      align-items: flex-start;
     }
 
-    .footer-input {
-        padding-left: 80px;
+    .footer-links-container {
+      align-items: flex-start;
+      margin-right: 80px;
     }
 
-    .form-input {
-        margin-right: 15px;
+    .footer-text {
+      width: 264px;
+    }
+
+    .footer-input-email {
+      width: 264px;
     }
 }
 
@@ -1222,7 +1230,7 @@ padding-right: 0;
     }
     
     .modal-menu.is-open {
-      opacity: 0;
+      opacity: 1;
       visibility: visible;
       pointer-events: auto;
     }
