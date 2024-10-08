@@ -1217,6 +1217,7 @@ display: block;
 
     .modal-menu {
       overflow-y: scroll;
+      overflow-x: hidden;
       position: fixed;
       top: 0;
       left: 0;
